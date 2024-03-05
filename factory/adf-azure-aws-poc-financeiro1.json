@@ -1,0 +1,9 @@
+{
+	"name": "adf-azure-aws-poc-financeiro1",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7fd66a80-1374-4ed2-8bf6-414b5fc35ceb",
+		"tenantId": "3044fcb5-2d35-4636-9770-6c0604cbd639"
+	}
+}

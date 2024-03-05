@@ -1,0 +1,41 @@
+{
+	"name": "SourceDataset_a2d",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AmazonS3_Financeiro",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AmazonS3Location",
+				"bucketName": "bdfinanceiro",
+				"fileName": "PAGAMENTOS_EFETUADOS.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ID_NF_ENTRADA",
+				"type": "String"
+			},
+			{
+				"name": "DATA_VENCIMENTO",
+				"type": "String"
+			},
+			{
+				"name": "DATA_PGT_EFETUADO",
+				"type": "String"
+			},
+			{
+				"name": "VALOR_PARCELA_PAGO",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
